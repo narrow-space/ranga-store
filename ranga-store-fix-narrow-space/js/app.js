@@ -11,29 +11,29 @@ const showProducts = (products) => {
    
     
     const div = document.createElement("div");
+   
+    div.innerHTML =`<div class="single-product  border rounded" style="background-color:#fdfdfd;height:34rem ">
+    <div>
     
+  <img class="" style="height:130px;" src=${product.image}></img>
+    </div>
+    <h3>${product.title.slice(1,36)}</h3>
+    <p>Category: ${product.category}</p>
+    <p>Ratings:${product.rating.rate}
+     
+      
+      <i class="fa fa-star" style="color:orange"></i>
+      <i class="fa fa-star" style="color:orange"></i>
+      <i class="fa fa-star"style="color:orange"></i>
+      <i class="fa fa-star-half"style="color:orange"></i>
+     
+    <p>Total Rating Person:${product.rating.count}
+    <h2>Price: $ ${product.price}</h2>
+    <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
+    <button id="details-btn" class="btn btn-danger">Details</button></div>
+    `;
     
    
-    div.innerHTML =`<div class="single-product border rounded" style="background-color:#fdfdfd">
-      <div>
-      
-    <img class="img-fluid w-50 h-50" src=${product.image}></img>
-      </div>
-      <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
-      <p>Ratings:${product.rating.rate}
-       
-        
-        <i class="fa fa-star" style="color:orange"></i>
-        <i class="fa fa-star" style="color:orange"></i>
-        <i class="fa fa-star"style="color:orange"></i>
-        <i class="fa fa-star-half"style="color:orange"></i>
-       
-      <p>Total Rating Person:${product.rating.count}
-      <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button></div>
-      `;
     document.getElementById("all-products").appendChild(div);
   }
 };
