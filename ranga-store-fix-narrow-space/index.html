@@ -21,29 +21,30 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="body">
   <header>
     
+   <h1 class="text-center text-danger my-3">Search Your Desire <span class="text-success">Products</span> </h1> 
 
   </header>
   <main class="main">      
-<div class="input-group mb-3 mx-auto w-50 my-5 sticky-top">
-  <input type="text" class="form-control rounded-3  search-field " placeholder="search your products" aria-label="Recipient's username" aria-describedby="button-addon2">
-  <button style="background-color: #f57224" class="btn  mx-1 rounded-3 search-button text-white fa " type="button" id="search-btn" onclick="loadProducts()"><i class="fa  fa-search p-2"></i></button>
+<div class="input-group mb-3 mx-auto w-50 my-3 sticky-top">
+  <input type="text" class="form-control rounded-3  search-field " placeholder="search in Aliexpress" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button  class="btn  mx-1 rounded-3 search-button bg-success text-white fa " type="button" id="search-btn" onclick="loadProducts()"><i class="fa  fa-search p-2"></i></button>
 </div>
       
     </div>
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
-        <div id="all-products" class="">
+        <div id="all-products" class="mx-3">
           
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
-        <div class="cart" id="my-cart">
+        <div class="cart" id="my-cart ">
           <table class="table">
             <thead>
-              <h1>My-Cart</h1>
+              <h1 class="text-success">My-Cart</h1>
               <tr>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -84,7 +85,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn btn-success text-center">Buy Now</button>
           </div>
         </div>
       </div>

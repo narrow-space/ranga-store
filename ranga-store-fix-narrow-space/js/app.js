@@ -14,10 +14,10 @@ const showProducts = (products) => {
     
     
    
-    div.innerHTML =`<div class="single-product" style="background-color:#fdfdfd">
+    div.innerHTML =`<div class="single-product border rounded" style="background-color:#fdfdfd">
       <div>
       
-    <img class="product-image" src=${product.image}></img>
+    <img class="img-fluid w-50 h-50" src=${product.image}></img>
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
